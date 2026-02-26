@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 20px;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+      max-width: 970px;
+      max-height: 100%;
+      padding: 30px;
+}
+
+.grid-container {
+    display: grid;
+    row-gap: 50px;
+
+}
+
+.content-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.first-box {
+    width: 400px;
+    height: 175px;
+    padding: 20px;
+    background:rgb(27, 26, 26) ;
+    color: white;
+    border-radius: 20px;
+    position: relative;
+}
+
+.first-box::after {
+    content: '';
+    width: 40px;
+    height: 30px;
+    position: absolute;
+      background:rgb(27, 26, 26) ;
+    bottom: -20px;
+    left: 25px;
+    clip-path:polygon(0% 0%, 100% 0%, 50% 85%)
+
+}
+
+.first-box img {
+    border-radius: 20px;
+}
+.user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: black;
+    margin-top: 30px;
+}
+
+.name-user {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: start;
+}
+
+.name-user p {
+    font-size: 16px;
+}
+
+.first-box2{
+    padding: 20px;
+    width: 370px;
+    border: 2px solid black;
+    border-radius: 20px;
+    color: rgb(31, 30, 30);
+    display: flex;
+    flex-direction: column;
+}
+
+.first-box2 img {
+    border-radius: 40%;
+}
+
+
+/* second part */
+
+.second-box {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.second-content {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    height: 100%;
+    padding: 30px;
+    border-radius: 30px;
+    gap: 20px;
+}
+
+.second-box > img {
+    height: 300px;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+
+.box-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.span-second {
+    color: rgb(150, 147, 147);
+}
+
+/* third part */
+
+.third-box {
+    border: 1px solid black;
+    height: 100%;
+    border-radius:30px ;
+    padding: 40px;
+    text-align:center;
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+}
+
+.third-box > p {
+    width: 600px;
+}
+
+.review {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.photos-rewiew {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.photos-rewiew > img {
+    border-radius: 40%;
+}
+
+.photos-rewiew > img:first-child {
+    opacity: 0.6;
+    transform: scale(0.8);
+}
+
+
+.photos-rewiew > img:last-child {
+    opacity: 0.6;
+    transform: scale(0.8);
+}
